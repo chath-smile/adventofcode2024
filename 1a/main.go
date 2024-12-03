@@ -24,8 +24,8 @@ func main() {
 }
 
 func loadData() ([]int, []int) {
-	list1 := make([]int, 1000)
-	list2 := make([]int, 1000)
+	list1 := make([]int, 0, 1000)
+	list2 := make([]int, 0, 1000)
 
 	file, err := os.Open("input.txt")
 	if nil != err {
